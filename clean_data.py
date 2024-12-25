@@ -5,7 +5,7 @@ def cleanse_data(input_file, output_file):
     df = pd.read_csv(input_file)
     
     # Example cleansing steps
-    # Remove rows with missing values
+    # Remove all rows with missing values
     df.dropna(inplace=True)
     # Convert all column names to lowercase
     df.columns = [col.lower() for col in df.columns]
